@@ -1,2 +1,23 @@
 #MongoDB
 
+Le format JSPN : Pourquoi
+-Json est un format universel,très répandu
+-Aucune structure n'est imposr (seule condition : la syntaxe)
+-Les documents permettent de regrouper des informations
+-Les bases de données permettes la gestion d'une quantité immense de données
+
+MongoDB est un système de base de données orienté documents et cross-platform
+
+Base de données : est le conteneur physique des collections
+
+Une collection est un groupe de documents MongoDB, c'est l'equivalent d'une table dans un systeme de gestion de base de données. Les collections n'imposent pas de schéma précis.
+
+Les document présent au sein d'une même collection peuvent avoir des champs différents.
+
+Malgres cela, tous les document d'une même collections sont généralement similaires ou ont un usage similaire.
+
+MongoDB vs RDBMS
+
+pas de joiture, document imbriqué
+pas de schema
+Une structure claire
