@@ -21,3 +21,44 @@ MongoDB vs RDBMS
 pas de joiture, document imbriqué
 pas de schema
 Une structure claire
+
+
+## Les requetes Geo Spatiales
+
+### Le standard Geojson
+
+![Alt text](image-1.png)
+
+![Alt text](image.png)
+
+### Les index Geospatiaux
+
+MongoDB vous proposes des index geospatiaux pour ameliorer les performances des requetes geospatiales. Il existe deux types d'index geospautiaux : les index 2d et les index 2dsphere
+
+```sh
+db.plan.createIndex({"geodata": "2d"}) #index
+
+```
+
+#### les index 2D
+
+Ils utilisent des couples de coordonnées appelés 'legacy', les index 2d ne prennent pas en charges les sphere et les calcules de distance sur une sphere. il ne prennent pas en charges les index sur plusieurs champs.
+
+exemple d'inseritions
+
+![Alt text](image-2.png)
+
+![Alt text](image-3.png)
+
+![Alt text](image-4.png)
+
+#### L'operateure $nearSphere
+![Alt text](image-5.png)
+
+#### l'operateure $geowithin 
+![Alt text](image-6.png)
+
+#### l'operateur $geoIntersects
+
+![Alt text](image-7.png)
+
