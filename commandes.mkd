@@ -10,7 +10,7 @@ docker cp ./restaurants.json_/restaurants.json mongo:/data/restaurant.json
 
 docker exec -it mongo /bin/bash
 
-mongoimport --db dbRPI --collection restaurant --type json --file /data/restaurant.json
+    mongoimport --db dbRPI --collection restaurant --type json --file /data/restaurant.json
 
 mongosh
 
